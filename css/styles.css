@@ -21,3 +21,18 @@ body {
 .titulo span {
     font-size: 2rem;
 }
+
+.contenedor {
+    width: 120rem; /** 1200px **/
+    margin: 0 auto;
+}
+.nav-bg {
+    background-color: var(--secundario); /** Aplicamos color secundario a barra navegación **/
+}
+.navegacion-principal {
+    padding: 1rem; /** Aumentamos ancho de barra navegación **/
+}
+.navegacion-principal a {
+    color: var(--blanco); /** Aplicamos color blanco a texto barra navegación **/
+    text-decoration: none; /** Quitamos subrayado de enlaces **/
+}   
