@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Stack Web Developer</title>
     <link rel="preload" href="./css/normalize.css" as="style"> <!--Precargamos Normalize para mejor performance -->
-    <link rel="stylesheet" href="./css/styles.css">    
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="preload" href="./css/styles.css" as="style"> <!--Precargamos hoja de estilos para mejor performance -->
-    <link rel="stylesheet" href="./css/styles.css">    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./img/favicon.ico"/>
+    
+    
 </head>
 <body>
     <header>
@@ -20,29 +22,31 @@
     </header>
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
+            <a href="./index.html">Inicio</a>
             <a href="#">Biografía</a>
             <a href="#">Portfolio</a>
-            <a href="#">Contacto</a>       
+            <a href="./contacto.html">Contacto</a>       
         </nav>
     </div>    
-    <section>
-        <h2 class="titulo">Diseño y Desarrollo Web</h2>
-        <p> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-search" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#114b5f" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
-                <path d="M9 4v13" />
-                <path d="M15 7v5" />
-                <circle cx="16.5" cy="17.5" r="2.5" />
-                <path d="M18.5 19.5l2.5 2.5" />
-            </svg>
-        </p>
-        <p>Valencia, España</p>
-
-        <a href="#">Contactar</a>
-    </section>
+    <div class="hero">
+        <section class="contenido-hero">
+            <h2 class="titulo">Diseño y Desarrollo Web</h2>
+            <p> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-search" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#114b5f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
+                    <path d="M9 4v13" />
+                    <path d="M15 7v5" />
+                    <circle cx="16.5" cy="17.5" r="2.5" />
+                    <path d="M18.5 19.5l2.5 2.5" />
+                </svg>
+            </p>
+            <p>Valencia, España</p>
     
+            <a href="#">Contactar</a>
+        </section>
+    </div>
+
     <main>
         <h2>Mis Servicios</h2>
 
@@ -79,7 +83,7 @@
         </section>
         
         <section>
-            <h3>E-Commerce</h3>
+            <h3>Tienda Online</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <rect x="3" y="5" width="18" height="14" rx="3" />
@@ -91,40 +95,7 @@
         </section>        
     </main>
     
-    <section>
-        <h2>Contacto</h2>
-
-        <form action="">
-            <fieldset>
-                <legend>Contáctanos rellenando todos los campos</legend>
-
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu Nombre">
-                </div>
-                
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Tu Teléfono">
-                </div>
-                
-                <div>
-                    <label>Correo</label>
-                    <input type="mail" placeholder="Tu E-Mail">
-                </div>
-
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-                
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>                
-            </fieldset>
-        </form>
-    </section>
-
+   
     <footer>
         <p>Todos los derechos resrevados. Jorge Campo Full Stack Web Developer</p>
     </footer>
