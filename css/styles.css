@@ -3,8 +3,8 @@
     --oscuro: #212121;
     --primario:#1a936f ;
     --secundario: #114b5f;
-    --gris: #757575
-    
+    --gris: #757575;
+    --degradado: #b1d7eb;
 }
 html {
     font-size: 62.5%; /** Al aplicar estos valores al html y body podemos trabajar con los rem más fácilmente 1rem = 10px */
@@ -16,7 +16,17 @@ html {
 body {
     font-size: 16px;
     font-family: 'Krub', sans-serif; /** Aplicamos estilo de fuente a todo el body **/
+    background-image: linear-gradient(to top, var(--degradado) 0%, var(--blanco)); /** Degradado desde parate baja hacia arriba acabando en blanco **/
 }
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5); /** Box shadow **/
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Tipografía */
 h1 {
     font-size: 3.8rem; /** 38 pixels **/
 }
@@ -72,6 +82,7 @@ h1, h2, h3 {
     background-size: cover; /** Rellena todo el espacio con la imagen **/
     height: 450px; /** Aumentamos el tamaño de la imagen **/      
     position: relative;
+    margin-bottom: 2rem; /** Aplica espacion entre hero y caja con soombra **/
 }
 
 .contenido-hero {
@@ -90,20 +101,51 @@ h1, h2, h3 {
 .contenido-hero p {
     color: var(--blanco);
 }
-.ubicacion {
+.contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
 }
+/** Servicios **/
+@media (min-width:768px ) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%; /** Aplicamos grid y repartimos el 100% del espacio en 3 columnas, se puede usa 1fr **/
+    }    
+}
 
-/* .formulario {
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: 400;
+}
+.servicio p {
+    line-height: 2;
+}
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly; /** Alineamos horizontalmente **/
+    align-items: center; /** Alineamos verticalmente **/
+}
+/** Contacto.html **/
+
+.formulario {
     background-color: var(--gris);
     padding: 2rem;
     border-radius: 10px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-} */
+}
 
-/* .mapa {
+.mapa {
     display: flex;
     justify-content: center;
-} */ 
+}
