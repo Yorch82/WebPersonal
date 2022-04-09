@@ -44,6 +44,144 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
 .contenedor {
     max-width: 120rem; /** 1200px **/
     margin: 0 auto;
@@ -137,15 +275,76 @@ h1, h2, h3 {
 }
 /** Contacto.html **/
 
-.formulario {
+.formulario {  /** aplicamos estilos al formulario de contacto **/
     background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
     padding: 2rem;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    border-radius: 1rem; 
+}
+.formulario fieldset {
+    border: none;
+
+}.formulario legend {  /** Aplicamos estilos al legend del formulario **/
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
 }
 
+.contenedor-entradas {
+
+}
+
+.entrada {
+    margin-bottom: 1rem;  /** Separación de 10px entre los distintos campos del formulario **/
+}
+
+.entrada label {  /** Aplicamos estilos a las etiquetas de los campos del fomrulario **/
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.datos {
+    width: 100%; /** Toma todo el espacio disponible **/
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+.boton:hover {
+    cursor:pointer;
+}
+
+.entrada textarea {
+    height: 20rem;
+}
 .mapa {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
 }
