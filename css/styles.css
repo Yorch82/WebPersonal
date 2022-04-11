@@ -221,7 +221,7 @@ h1, h2, h3 {
   background-size: 100%; /** Rellena todo el espacio con la imagen **/
   height: 450px; /** Aumentamos el tamaño de la imagen **/      
   position: relative;    
-  margin-bottom: 16rem; /** Aplica espacion entre hero y caja con soombra **/
+  margin-bottom: 2rem; /** Aplica espacion entre hero y caja con soombra **/
 }
 .contenido-hero h2,
 .contenido-hero p{
