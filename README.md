@@ -17,8 +17,11 @@ https://github.com/Yorch82/WebPersonal.git
 
 ### Vista previa
 
-![foto](link imagen)
+![Vista Responsive para móvil](./img/screenshots/movil_inicio.png)
 
+![Vista Responsive para Tablet](./img/screenshots/tablet_inicio.png)
+
+![Vista Responsive para móvil](./img/screenshots/escritorio_inicio.png)
 
 ### Autor
 Este proyecto  fue desarrollado por [Jorge Campo](https://github.com/Yorch82)
