@@ -20,11 +20,6 @@ body {
     background-image: linear-gradient(to top, var(--degradado) 0%, var(--blanco)); /** Degradado desde parate baja hacia arriba acabando en blanco **/
     
 }
-body #bio {
-    height: 100%; 
-    min-height: 100vh;
-    margin: 0px;
-}
 
 /* Tipografía */
 h1 {
@@ -36,10 +31,10 @@ h2 {
 h3 {
     font-size: 1.8rem; /** 18 pixels **/
 }
-h1, h2, h3 {
+h1, h2, h3, span {
     text-align: center;
 }
-
+/** Codigo CSS para animación index.html **/
 .fondo-animado {
     background-color: #0040C1;
     position: relative;
@@ -72,7 +67,7 @@ h1, h2, h3 {
       width: 20%;
         
   }
-  
+ 
   .cube {
     position: absolute;
     top: 80vh;
@@ -146,6 +141,7 @@ h1, h2, h3 {
       opacity: 0;
     }
   }
+/* fin codeigo css animacion */
 
 .contenedor {
     max-width: 120rem; /** 1200px **/
@@ -157,6 +153,13 @@ h1, h2, h3 {
     padding: 2rem;
     border-radius: 1rem;
 }
+
+.sombrafoto { 
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5); /** Box shadow **/
+    background-color: var(--blanco);    
+    border-radius: 1rem;
+}
+
 .nav-bg {
     background-color: var(--secundario); /** Aplicamos color secundario a barra navegación **/
     
@@ -224,9 +227,9 @@ h1, h2, h3 {
 }
 .contenido-hero h2,
 .contenido-hero p{
-    color: var(--blanco);
+    color: var(--blanco); /* Aplicamos letra color blanco a h2 (diseño y desarrollo web) y p (ibiza-valencia) */
 }
-.contenido-hero .ubicacion {
+.contenido-hero .ubicacion { 
     display: flex;
     align-items: flex-end;
 }
@@ -238,18 +241,18 @@ h1, h2, h3 {
     }    
 }
 
-.servicio {
+.servicio {  /* Aplicamos flex al contenedor .servicio y alineamos en columna centrado titulo icono y texto servicios */
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
 .servicio h3 {
-    color: var(--secundario);
+    color: var(--secundario); /* aplicamos a los titulos de servicio color secundario */
     font-weight: 400;
 }
 .servicio p {
-    line-height: 2;
+    line-height: 2; /* Espaciado entre lineas seccion servicios */
 }
 .servicio .iconos {
     height: 15rem;
@@ -258,10 +261,19 @@ h1, h2, h3 {
     justify-content: space-evenly; /** Alineamos horizontalmente **/
     align-items: center; /** Alineamos verticalmente * */
 }
-.iconos {
-    height: 50%;
+.web {  /* Aplicamos estilos a enlaces portfolio */
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: #114b5f;
+    border-radius: 0.5rem;
     width: 50%;
+    text-align: center;
 }
+
+.titulo_portfolio {
+    text-transform: uppercase;
+}
+
 /** Contacto.html **/
 
 .formulario {  /** aplicamos estilos al formulario de contacto **/
@@ -284,8 +296,8 @@ h1, h2, h3 {
     
 }
 legend {
-  text-align: center;
-  width: 100%;
+  text-align: center; /* Alineamos al centro titulo formulario */
+  width: 100%; /* Damos anchura 100% para que quepa legend en una linea*/
 }
 @media (min-width: 768px) {
     .contenedor-entradas {
@@ -319,7 +331,6 @@ legend {
     padding: 1.5rem;
     border-radius: 1.5rem;
 }
-
 .boton {
     background-color: var(--secundario);
     color: var(--blanco);
@@ -335,47 +346,47 @@ legend {
     width: 100%;
     
 }
+
 .fondo-animado__boton{
     color: var(--blanco);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2.5rem;
     background-color: var(--secundario);
-    border-radius: .5rem;
-    width: 90%;
-    border: none;
+    border-radius: 1rem;
     width: 100%;
+    border: none;  
     
 }
 
 .boton:hover {
-    cursor:pointer;
+    cursor:pointer; /* Activa la mano como cursor cuando ponemos raton encima de boton */
 }
 
 .entrada textarea {
     height: 20rem;
 }
-.mapa {
-    padding: 5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.mapa {  /* Aplicamos estilos a mapa */
+    padding: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     justify-content: space-around;
 }
-.social {
+.social { /* distribuimos iconos social media */
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
 }
 
-main {
+.main-contacto {  /* Aplicamos grid a campos formulario */
   display: grid;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 768px) {
     .main-contacto{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
 }
 
@@ -385,16 +396,14 @@ footer {
 
 .foto {
     border-radius: 15rem;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    height: 250px;
-    margin-bottom: 2rem; 
+    height: 250px; /* reducimos tamaño imagen */
+    margin-bottom: 2rem; /* margen inferior respecto al texto de 2rem */
+     
 }
 .caja_bio {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 @media (min-width: 768px) {
@@ -402,3 +411,4 @@ footer {
        height: 390px;
    } 
 }
+
