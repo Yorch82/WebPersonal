@@ -1,5 +1,5 @@
-# Copia de Google
-Este proyecto se trata de una copia de google realizada en el bootcamp de The Bridge.
+# Web Personal Freelancer
+Este proyecto se trata de una página web personal donde se ofrecen mis servicios como desarrolador Web Full Stack.
 
 ## Tecnologías
 _Este proyecto fue desarrollado con las siguientes tecnologías:_
@@ -11,7 +11,7 @@ _Este proyecto fue desarrollado con las siguientes tecnologías:_
 Para desplegar este proyecto debes clonarte a través del siguiente link:
 
 ```
-enlace al repo
+https://github.com/Yorch82/WebPersonal.git
 
 ```
 
@@ -21,4 +21,4 @@ enlace al repo
 
 
 ### Autor
-Este proyecto  fue desarrollado por [Las clase de Fullstack](https://github.com/Yorch82)
+Este proyecto  fue desarrollado por [Jorge Campo](https://github.com/Yorch82)

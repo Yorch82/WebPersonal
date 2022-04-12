@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%; /** Al aplicar estos valores al html y body podemos trabajar con los rem más fácilmente 1rem = 10px */
     box-sizing: border-box; /** video 36 **/
-    scroll-behavior: smooth;
+    
 }
 *, *:before, *:after {
   box-sizing: inherit;
