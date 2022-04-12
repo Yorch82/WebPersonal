@@ -16,7 +16,7 @@ html {
 }
 body {
     font-size: 16px;
-    font-family: 'Krub', sans-serif; /** Aplicamos estilo de fuente a todo el body **/
+    font-family: 'Plus Jakarta Sans', sans-serif; /** Aplicamos estilo de fuente a todo el body **/
     background-image: linear-gradient(to top, var(--degradado) 0%, var(--blanco)); /** Degradado desde parate baja hacia arriba acabando en blanco **/
     
 }
