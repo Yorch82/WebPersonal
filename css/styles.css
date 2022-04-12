@@ -182,7 +182,7 @@ h1, h2, h3, span {
     text-decoration: none; /** Quitamos subrayado de enlaces **/
     font-size: 2rem; /** Aumnetamos tamaño enlaces barra navegación **/
     font-weight: bold; /** Aplicamos fuente bold a enlaces barra navegación **/
-    padding: 1rem; /** Aumentamos ancho de barra navegación **/
+    padding: 2rem; /** Aumentamos ancho de barra navegación **/
 }
 .navegacion-principal a:hover {
     background-color: var(--primario); /** Hover sobre enlaces de navegación. Cambia a color secundario **/
