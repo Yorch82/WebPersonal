@@ -36,15 +36,15 @@ h1, h2, h3, span {
 }
 /** Codigo CSS para animación index.html **/
 .fondo-animado {
-    background-color: #0040C1;
+    background-image: linear-gradient(to top, var(--degradado) 0%, var(--blanco));
     position: relative;
     height: 100vh;
     overflow: hidden;
-    font-family: 'Krub', sans-serif;    
+    font-family: 'Plus Jakarta Sans', sans-serif;;    
   }
   
 .fondo-animado__title {
-    color: #fff;
+    color: var(--gris);
     position: absolute;
     top: 50%;
     left: 50%;
